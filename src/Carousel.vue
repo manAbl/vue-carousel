@@ -833,6 +833,7 @@ export default {
     onResize() {
       this.computeCarouselWidth();
       this.computeCarouselHeight();
+      this.$emit("resize");
 
       this.dragging = true; // force a dragging to disable animation
       this.render();
