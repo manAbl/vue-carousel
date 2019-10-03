@@ -853,6 +853,14 @@ describe('Carousel component', () => {
 
       expect(wrapper.emitted().transitionEnd).toBeDefined();
     });
+
+    it('should emit a rezize event when the calculations of width and height have finished', async () => {
+      const wrapper = shallowMount(Carousel);
+
+      wrapper.vm.onResize();
+
+      expect(wrapper.emitted().resize).toBeDefined();
+    });
   });
 
   it('should decrease current page number by 1 when advance page backward is called', done => {

@@ -105,6 +105,7 @@ export default {
 | `slide-click`                | Object  | Slide    | Emits with the *dataset* object of the selected element                        ··
 | `transition-start` | | Carousel | Emits when the transition end is reached                                                                                                                                                  |
 | `transition-end`             |         | Carousel | Emits when the transition start is reached                                                                                                     ·                                                                                                               |
+| `resize`             |         | Carousel | Emits when the resize calculations ends                                                                                                     ·                                                                                                               |
 
 Lowercase versions of the above events are also emitted, namely—`pagechange`, `slideclick`, `transitionstart` and `transitionend`.
 
